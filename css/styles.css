@@ -21,11 +21,26 @@ body {
 .hide-title {
   visibility: hidden;
 }
+/* global no-margin */
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Logo */
 .logo {
   color: var(--activation-color);
   text-decoration: none;
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
