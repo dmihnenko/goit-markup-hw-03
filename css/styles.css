@@ -235,9 +235,9 @@ ul {
 /* ------------------start portfolio------------------ */
 
 /* sub-navi */
-.work-examples {
+.sub-navi {
+  display: inline-block;
   margin-top: 94px;
-  background-color: Ff000080;
 }
 .work-examples .button {
   cursor: pointer;
