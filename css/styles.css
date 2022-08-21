@@ -5,6 +5,7 @@
   --activation-color: #2196f3;
   --white-text-color: #ffffff;
   --secondary-background-color: #f5f4fa;
+  --footer-color-bg: #2f303a;
 }
 
 /* page */
@@ -17,50 +18,59 @@ body {
 }
 .list {
   list-style: none;
+  padding-inline-start: 0;
 }
+
 .hide-title {
   visibility: hidden;
 }
-/* global no-margin */
+
 h1,
 h2,
 h3,
 p,
 ul {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
 .container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  /* padding-left: 15px;
+  padding-right: 15px; */
 }
+
 /* Logo */
 .logo {
+  display: inline-block;
   color: var(--activation-color);
   text-decoration: none;
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 .logo-head {
   color: rgba(33, 33, 33, 1);
-}
-.logo-foot {
-  color: rgba(255, 255, 255, 1);
 }
 
 /* site-nav */
 
 .site-nav .link {
+  display: inline-block;
   text-decoration: none;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -72,13 +82,16 @@ ul {
 
 /* auth-nav */
 .auth-nav .link {
+  display: inline-block;
   color: var(--secondary-text-color);
   text-decoration: none;
-
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 .auth-nav .link:hover,
 .auth-nav .link:focus {
@@ -86,14 +99,17 @@ ul {
 }
 
 /* hero */
+.hero {
+  text-align: center;
+  /* Временно */
+  background-color: var(--footer-color-bg);
+  /*  */
+}
 .hero .hero-title {
   color: var(--white-text-color);
-  /* Временно */
-  background-color: var(--secondary-background-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -106,9 +122,15 @@ ul {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
+
+  margin-top: 30px;
+  padding: 11px 32px;
 }
 
 /* our advantages */
+.our-advantages {
+  margin-top: 94px;
+}
 .our-advantages .sub-title {
   font-weight: 700;
   font-size: 14px;
@@ -118,6 +140,8 @@ ul {
 .our-advantages .text {
   color: var(--secondary-text-color);
   line-height: 1.71;
+
+  margin-top: 10px;
 }
 
 /* our-work */
@@ -126,21 +150,36 @@ ul {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+
+  margin-top: 94px;
+}
+.our-work .img {
+  margin-top: 50px;
 }
 
 /* our-team */
+.our-team {
+  margin-top: 94px;
+  background-color: var(--secondary-background-color);
+}
 .our-team-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
-}
 
+  padding-top: 94px;
+}
+.our-team-box {
+  margin-top: 50px;
+}
 .our-team .sub-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.16;
   text-align: center;
+
+  margin-top: 30px;
 }
 
 .our-team .text {
@@ -149,15 +188,30 @@ ul {
   font-weight: 400;
   line-height: 1.16;
   text-align: center;
+
+  margin-top: 10px;
 }
 
 /* footer */
+.site-footer {
+  background-color: var(--footer-color-bg);
+}
+/* Logo footer*/
+.logo.logo-footer {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+.logo-foot {
+  color: rgba(255, 255, 255, 1);
+  margin-top: 60px;
+}
+
 .site-footer .color-adress {
   color: var(--white-text-color);
-  /* Временно  */
-  background-color: var(--secondary-background-color);
   font-size: 14px;
   line-height: 1.71;
+
+  margin-top: 20px;
 }
 .site-footer .link {
   color: var(--secondary-text-color);
@@ -165,6 +219,10 @@ ul {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+}
+.footer-end-space {
+  display: inline-block;
+  margin-bottom: 60px;
 }
 
 .site-footer .link:hover,
