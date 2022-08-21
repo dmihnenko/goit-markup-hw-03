@@ -255,6 +255,9 @@ ul {
 }
 
 /* work-examples */
+.work-examples a {
+  text-decoration: none;
+}
 
 .work-examples .list-item {
   margin-top: 30px;
@@ -264,9 +267,6 @@ ul {
   margin-top: 34px;
 }
 
-.work-examples a {
-  text-decoration: none;
-}
 .work-examples .sub-title {
   color: var(--primary-text-color);
   font-weight: 700;
