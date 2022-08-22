@@ -6,6 +6,7 @@
   --white-text-color: #ffffff;
   --secondary-background-color: #f5f4fa;
   --footer-color-bg: #2f303a;
+  --block-spacing: 94px;
 }
 
 /* page */
@@ -16,6 +17,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+
 .list {
   list-style: none;
   padding-inline-start: 0;
@@ -33,6 +35,7 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 .container {
   width: 1200px;
   margin-left: auto;
@@ -42,8 +45,9 @@ ul {
 }
 
 /* Logo */
+
 .logo {
-  display: inline-block;
+  display: block;
   color: var(--activation-color);
   text-decoration: none;
   font-family: "Raleway";
@@ -59,9 +63,12 @@ ul {
 }
 
 /* site-nav */
+.site-nav {
+  display: flex;
+}
 
 .site-nav .link {
-  display: inline-block;
+  display: block;
   text-decoration: none;
   color: var(--primary-text-color);
   font-weight: 500;
@@ -82,7 +89,7 @@ ul {
 
 /* auth-nav */
 .auth-nav .link {
-  display: inline-block;
+  display: block;
   color: var(--secondary-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -129,8 +136,15 @@ ul {
 
 /* our advantages */
 .our-advantages {
-  margin-top: 94px;
+  margin-top: var(--block-spacing);
 }
+.our-advantages-card {
+  display: flex;
+}
+.our-advantages-card > .item + .item {
+  margin-left: 30px;
+}
+
 .our-advantages .sub-title {
   font-weight: 700;
   font-size: 14px;
@@ -151,15 +165,22 @@ ul {
   line-height: 1.16;
   text-align: center;
 
-  margin-top: 94px;
+  margin-top: var(--block-spacing);
 }
 .our-work .img {
+  display: flex;
   margin-top: 50px;
+}
+
+.our-work .item {
+}
+.our-work .item + .item {
+  margin-left: 30px;
 }
 
 /* our-team */
 .our-team {
-  margin-top: 94px;
+  margin-top: var(--block-spacing);
   background-color: var(--secondary-background-color);
 }
 .our-team-title {
@@ -168,11 +189,16 @@ ul {
   line-height: 1.16;
   text-align: center;
 
-  padding-top: 94px;
+  padding-top: var(--block-spacing);
 }
 .our-team-box {
   margin-top: 50px;
+  display: flex;
 }
+.our-team-box .item + .item {
+  margin-left: 30px;
+}
+
 .our-team .sub-title {
   font-weight: 500;
   font-size: 16px;
@@ -195,7 +221,7 @@ ul {
 /* footer */
 .site-footer {
   background-color: var(--footer-color-bg);
-  margin-top: 94px;
+  margin-top: var(--block-spacing);
 }
 /* Logo footer*/
 .logo.logo-footer {
@@ -237,8 +263,12 @@ ul {
 
 /* sub-navi */
 .sub-navi {
-  display: inline-block;
-  margin-top: 94px;
+  display: block;
+  margin-top: var(--block-spacing);
+}
+.sub-navi .filter {
+  display: flex;
+  justify-content: center;
 }
 .work-examples .button {
   cursor: pointer;
@@ -255,17 +285,17 @@ ul {
   background-color: var(--activation-color);
 }
 
-/* work-examples */
+.work-examples .card-set {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .work-examples a {
   text-decoration: none;
 }
 
-.work-examples .list-item {
+.work-examples .item {
   margin-top: 30px;
-}
-
-.work-examples .list-item:nth-child(-n + 3) {
-  margin-top: 34px;
 }
 
 .work-examples .sub-title {
