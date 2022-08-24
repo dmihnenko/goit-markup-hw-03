@@ -39,9 +39,14 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
 }
+
 /* container */
 .header {
   border-bottom: 1px solid #ececec;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .container {
   width: 1200px;
@@ -108,9 +113,6 @@ body {
   background-color: #2f303a;
 
   height: 600px;
-  /*  */
-
-  margin-bottom: var(--block-spacing);
 }
 
 .hero-title {
@@ -145,13 +147,11 @@ body {
 }
 /* advantages */
 
-.advantages {
-  margin-bottom: var(--block-spacing);
-}
-
 .advantages-list {
   display: flex;
   gap: 30px;
+
+  margin-bottom: 94px;
 }
 
 .advantages-list-item {
@@ -174,13 +174,13 @@ body {
 /* work */
 .work {
   text-align: center;
-  margin-bottom: var(--block-spacing);
 }
 
 .title-h2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
+  text-align: center;
 
   margin-bottom: 50px;
 }
@@ -194,14 +194,10 @@ body {
   text-align: center;
   background-color: var(--secondary-background-color);
 }
-.team-title {
-  padding-top: var(--block-spacing);
-}
+
 .team-list {
   display: flex;
   gap: 30px;
-
-  padding-bottom: var(--block-spacing);
 }
 .team-list-item {
   width: 270px;
@@ -287,14 +283,11 @@ body {
 
 /* Portfolio */
 
-.portfolio {
-  margin-top: var(--block-spacing);
-  margin-bottom: 34px;
-}
-
 .filter-list {
   display: flex;
   justify-content: center;
+
+  margin-bottom: 34px;
 }
 
 .filter-list .button {
@@ -318,7 +311,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-bottom: var(--block-spacing);
 }
 
 .card-item-title {
