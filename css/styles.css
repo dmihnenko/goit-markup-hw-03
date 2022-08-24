@@ -54,14 +54,6 @@ body {
 .main-nav {
   display: flex;
 }
-.site-nav {
-  display: flex;
-}
-.auth-nav {
-  display: flex;
-  margin-left: auto;
-}
-
 /* logo */
 .logo {
   display: block;
@@ -79,9 +71,7 @@ body {
 .logo-head {
   color: rgba(33, 33, 33, 1);
 }
-
-/* site-nav */
-.item {
+.nav-item {
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -91,26 +81,38 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-.item + .item {
-  margin-left: 50px;
-}
-.item:hover,
-.item:focus {
+
+.nav-item:hover,
+.nav-item:focus {
   color: var(--activation-color);
 }
 .current {
   color: var(--activation-color);
 }
 
+.site-nav {
+  display: flex;
+  margin-right: auto;
+  gap: 50px;
+}
+/* auth-nav */
+.auth-nav {
+  display: flex;
+  gap: 50px;
+}
+
 /* hero */
-/* временно */
+
 .hero {
   text-align: center;
-  background-color: #ccc;
+  background-color: #2f303a;
+
+  height: 600px;
+  /*  */
 
   margin-bottom: var(--block-spacing);
 }
-/* временно */
+
 .hero-title {
   color: var(--white-text-color);
   font-weight: 900;
@@ -118,30 +120,45 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  padding-top: 200px;
+  margin-bottom: 30px;
 }
 .hero-btn {
+  display: flex;
   color: var(--white-text-color);
   background-color: var(--activation-color);
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
-  text-align: center;
+  line-height: 1.87;
   letter-spacing: 0.06em;
-  min-width: 216px;
+  text-align: center;
 
-  margin-top: 30px;
-  padding: 11px 32px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 10px 32px;
+  min-width: 216px;
+  height: 50px;
 }
 /* advantages */
 
-.advantages-list {
-  display: flex;
+.advantages {
   margin-bottom: var(--block-spacing);
 }
-.advantages-list-item + .advantages-list-item {
-  margin-left: 30px;
+
+.advantages-list {
+  display: flex;
+  gap: 30px;
 }
+
+.advantages-list-item {
+  min-width: 270px;
+  height: 98px;
+}
+
 .advantages-sub-title {
   font-weight: 700;
   font-size: 14px;
@@ -169,23 +186,32 @@ body {
 }
 .work-list {
   display: flex;
-}
-.work-item + .work-item {
-  margin-left: 30px;
+  gap: 30px;
 }
 
 /* team */
 .team {
   text-align: center;
-  margin-bottom: var(--block-spacing);
+  background-color: var(--secondary-background-color);
+}
+.team-title {
+  padding-top: var(--block-spacing);
 }
 .team-list {
   display: flex;
+  gap: 30px;
+
+  padding-bottom: var(--block-spacing);
 }
 .team-list-item {
-}
-.team-list-item + .team-list-item {
-  margin-left: 30px;
+  width: 270px;
+  height: 368px;
+
+  background: #ffffff;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .team-img {
   margin-bottom: 30px;
@@ -242,6 +268,8 @@ body {
 
   margin-top: 9px;
   margin-bottom: 9px;
+
+  /* Или использовать padding ??? */
 }
 
 .item-footer:focus,
@@ -252,26 +280,21 @@ body {
   color: var(--white-text-color);
 }
 
-/* poftfolio */
-
-/* .portfolio-page {
-  margin-bottom: 174px;
-  } */
-
-/* ВОПРОС !?!??! */
-/* Отступает но видет h2 */
-/* filter */
 .item-footer:last-child {
   padding-bottom: 60px;
   margin-bottom: 0;
 }
+
+/* Portfolio */
+
+.portfolio {
+  margin-top: var(--block-spacing);
+  margin-bottom: 34px;
+}
+
 .filter-list {
   display: flex;
   justify-content: center;
-  /* ВРЕМЕННО */
-  margin-top: 150px;
-  /* ВРЕМЕННО */
-  margin-bottom: 34px;
 }
 
 .filter-list .button {
@@ -294,15 +317,10 @@ body {
 .cards {
   display: flex;
   flex-wrap: wrap;
-
+  gap: 30px;
   margin-bottom: var(--block-spacing);
 }
 
-.cards-item {
-  outline: 1px solid red;
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
 .card-item-title {
   font-weight: 700;
   font-size: 18px;
@@ -315,11 +333,4 @@ body {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
-}
-/* cancel margin */
-.cards-item:nth-child(3n) {
-  margin-right: 0;
-}
-.cards-item:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
