@@ -20,125 +20,142 @@
 </head>
 
 <body>
-	<!-- Добавляем навигацию -->
 	<header>
+		<!-- add navigation -->
+		<!-- Вопрос по вложености Flex - работает только с ребенком, нужно подумать как сделать ! -->
+
 		<div class="container">
-			<div class="main nav">
+			<div class="main-nav">
+				<a href="./index.html" class="logo">Web<span class="logo-head">Studio</span></a>
 				<nav class="site-nav">
-					<a href="./index.html" class="logo">Web<span class="logo-head">Studio</span></a>
-					<ul class="site-nav list">
-						<li><a href="./index.html" class="link current">Студія</a></li>
-						<li><a href="./portfolio.html" class="link">Портфоліо</a></li>
-						<li><a href="" class="link">Контакти</a></li>
+					<ul class="site-nav">
+						<li class="item "><a href="./index.html">Студія</a></li>
+						<li class="item current"><a href="./porfolio.html">Портфоліо</a></li>
+						<li class="item"><a href="">Контакти</a></li>
 					</ul>
 				</nav>
-
-
-				<!-- Добавляем контакты  -->
-
-				<ul class="auth-nav list">
-					<li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-					<li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+				<ul class="auth-nav">
+					<li class="item"><a href="">info@devstudio.com</a></li>
+					<li class="item"><a href="">+38 096 111 11 11</a></li>
 				</ul>
 			</div>
+		</div>
 	</header>
 
-	<!-- Main -->
+	<!-- main start -->
+
 	<main>
+
+		<!-- hero -->
+
 		<section class="hero">
 			<div class="container">
 				<h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-				<button type="button" class="hero-button">Замовити послугу</button>
+				<button class="hero-btn" type="button">Замовити послугу</button>
 			</div>
 		</section>
-		<!-- Добавляем Наши примущества -->
-		<section class="our-advantages">
+
+		<!-- adv -->
+
+		<section>
 			<div class="container">
-				<h2 class="hide-title">Нашi переваги</h2>
-				<ul class="list our-advantages-card">
-					<li class="item">
-						<h3 class="sub-title">УВАГА ДО ДЕТАЛЕЙ</h3>
-						<p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+
+				<h2 class="hide-text">Переваги</h2>
+
+				<ul class="advantages-list">
+					<li>
+						<h3 class="adv-sub-title">УВАГА ДО ДЕТАЛЕЙ
+						</h3>
+						<p class="advantages-text">Ідейні міркування, і навіть початок повсякденної роботи з формування
+							позиції.
 						</p>
 					</li>
-					<li class="item">
-						<h3 class="sub-title">ПУНКТУАЛЬНІСТЬ</h3>
-						<p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+					<li>
+						<h3 class="adv-sub-title">ПУНКТУАЛЬНІСТЬ</h3>
+						<p class="advantages-text">Завдання організації, особливо рамки і місце навчання кадрів тягне у
+							себе.
+						</p>
 					</li>
-					<li class="item">
-						<h3 class="sub-title">ПЛАНУВАННЯ</h3>
-						<p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
+					<li>
+						<h3 class="adv-sub-title">ПЛАНУВАННЯ</h3>
+						<p class="advantages-text">Так само консультація з широким активом значною мірою зумовлює.
+						</p>
 					</li>
-					<li class="item">
-						<h3 class="sub-title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-						<p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+					<li>
+						<h3 class="adv-sub-title">СУЧАСНІ ТЕХНОЛОГІЇ
+						</h3>
+						<p class="advantages-text">Значимість цих проблем настільки очевидна, що реалізація планових
+							завдань.
+						</p>
 					</li>
 				</ul>
 			</div>
 		</section>
 
-		<!-- Добавляем чем мы занимаемся -->
-		<section class="our-work">
+		<!-- work -->
+
+		<section class="work">
 			<div class="container">
-				<h2 class="title">Чим ми займаємося</h2>
-				<ul class="list img">
-					<li class="item">
-						<img src="./images/img1.jpg" alt="Картинка №1" width="370" />
-					</li>
-					<li class="item">
-						<img src="./images/img2.jpg" alt="Картинка №2" width="370" />
-					</li>
-					<li class="item">
-						<img src="./images/img3.jpg" alt="Картинка №3" width="370" />
-					</li>
+				<h2 class="title-h2">Чим ми займаємося</h2>
+				<ul class="work-list">
+					<li class="work-item"><img src="./images/img1.jpg" alt="img1" width="370"></li>
+					<li class="work-item"><img src="./images/img2.jpg" alt="img2" width="370"></li>
+					<li class="work-item"><img src="./images/img3.jpg" alt="img3" width="370"></li>
 				</ul>
 			</div>
 		</section>
 
-		<!-- Добавляем команда -->
-
-		<section class="our-team">
+		<!-- team -->
+		<section class="team">
 			<div class="container">
-				<h2 class="our-team-title">Наша команда</h2>
-				<ul class="list our-team-box ">
-					<li class="item">
-						<img src="./images/team/igor.jpg" alt="Ігор Дем'яненко" width="270" />
-						<h3 class="sub-title">Ігор Дем'яненко</h3>
-						<p class="text">Product Designer</p>
+				<h2 class="title-h2">Наша команда</h2>
+				<ul class="team-list">
+					<li class="team-list-item">
+						<img src="./images/team/igor.jpg" alt="Ігор Дем'яненко" width="270">
+						<h3 class="team-sub-title">Ігор Дем'яненко</h3>
+						<p class="team-text">Product Designer</p>
 					</li>
-					<li class="item">
-						<img src="./images/team/olga.jpg" alt="Ольга Рєпіна" width="270" />
-						<h3 class="sub-title">Ольга Рєпіна</h3>
-						<p class="text">Frontend Developer</p>
+					<li class="team-list-item">
+						<img src="./images/team/olga.jpg" alt="Ольга Рєпіна" width="270">
+						<h3 class="team-sub-title">Ольга Рєпіна</h3>
+						<p class="team-text">Frontend Developer</p>
 					</li>
-					<li class="item">
-						<img src="./images/team/nikola.jpg" alt="Микола Тарасов" width="270" />
-						<h3 class="sub-title">Микола Тарасов</h3>
-						<p class="text">Marketing</p>
+					<li class="team-list-item">
+						<img src="./images/team/nikola.jpg" alt="Микола Тарасов" width="270">
+						<h3 class="team-sub-title">Микола Тарасов</h3>
+						<p class="team-text">Marketing</p>
 					</li>
-					<li class="item">
-						<img src="./images/team/mihail.jpg" alt="Михайло Єрмаков" width="270" />
-						<h3 class="sub-title">Михайло Єрмаков</h3>
-						<p class="text">UI Designer</p>
+					<li class="team-list-item">
+						<img src="./images/team/mihail.jpg" alt="Михайло Єрмаков" width="270">
+						<h3 class="team-sub-title">Михайло Єрмаков</h3>
+						<p class="team-text">UI Designer</p>
 					</li>
 				</ul>
 			</div>
 		</section>
+
 	</main>
 
-	<!-- Добавляем footer -->
-	<footer class="site-footer">
+	<!-- footer -->
+
+	<footer class="footer">
 		<div class="container">
-			<a href="./index.html" class="logo logo-footer">Web<span class="logo-foot">Studio</span></a>
-			<address>
-				<p class="color-adress">м. Київ, пр-т Лесі Українки, 26</p>
-				<ul class="list">
-					<li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
-					<li><a href="tel:+380961111111" class="link footer-end-space">+38 096 111 11 11</a></li>
+			<a href="" class="logo-footer-start">Web<span class="logo-footer-end">Studio</span></a>
+			<address class="font-style">
+				<ul>
+					<li class="adress-color item-footer">м. Київ, пр-т Лесі Українки, 26</li>
+					<li class="item-footer"><a href="mailto:info@devstudio.com">info@devstudio.com</a>
+
+					</li>
+					<li class="item-footer"><a href="tel:+38 096 111 11 11">+38 096 111 11 11</a></li>
 				</ul>
 			</address>
 		</div>
 	</footer>
-</body>
 
-</html>
+
+
+
+
+
+</body>
