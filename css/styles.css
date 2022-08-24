@@ -241,10 +241,13 @@ body {
 }
 
 /* poftfolio */
+
 /* filter */
+
 /* .portfolio-page {
   margin-bottom: 174px;
   } */
+
 /* ВОПРОС !?!??! */
 /* Отступает но видет h2 */
 .filter-list {
@@ -277,4 +280,16 @@ body {
   flex-wrap: wrap;
 
   margin-bottom: var(--block-spacing);
+}
+
+.cards-item {
+  outline: 1px solid red;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.cards-item:nth-child(3n) {
+  margin-right: 0;
+}
+.cards-item:nth-child(-n + 3) {
+  margin-bottom: 0;
 }
