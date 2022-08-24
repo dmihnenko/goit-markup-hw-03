@@ -250,7 +250,10 @@ body {
 /* ВОПРОС !?!??! */
 /* Отступает но видет h2 */
 /* filter */
-
+.item-footer:last-child {
+  padding-bottom: 60px;
+  margin-bottom: 0;
+}
 .filter-list {
   display: flex;
   justify-content: center;
