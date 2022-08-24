@@ -183,10 +183,15 @@ body {
 .team-list-item + .team-list-item {
   margin-left: 30px;
 }
+.team-img {
+  margin-bottom: 30px;
+}
 .team-sub-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.16;
+
+  margin-bottom: 10px;
 }
 
 .team-text {
