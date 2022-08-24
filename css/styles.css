@@ -40,7 +40,9 @@ body {
   letter-spacing: 0.03em;
 }
 /* container */
-
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .container {
   width: 1200px;
   margin-left: auto;
