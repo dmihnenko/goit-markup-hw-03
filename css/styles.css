@@ -300,9 +300,15 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
+  border: 1px solid transparent;
+  background: #f5f4fa;
+  border-radius: 4px;
 
   padding: 6px 22px;
+}
+
+.filter-list li:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-list .button:hover,
