@@ -331,8 +331,10 @@ body {
 .cards-border {
   background: #ffffff;
   border: 1px solid #eeeeee;
+
   padding-left: 24px;
   padding-right: 24px;
+  padding-bottom: 20px;
 }
 
 .card-item-title {
@@ -348,6 +350,4 @@ body {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
-
-  padding-bottom: 20px;
 }
