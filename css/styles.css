@@ -119,6 +119,16 @@ body {
   display: flex;
   gap: 50px;
 }
+.auth-contact {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 
 /* hero */
 
@@ -138,9 +148,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  /* width: 696px; */
-  /* при указании ширины, текст уезжает, хотя к нему
-  применен text-aligin родителя */
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 
   margin-bottom: 30px;
 }
@@ -170,8 +180,6 @@ body {
 .advantages-list {
   display: flex;
   gap: 30px;
-
-  margin-bottom: 94px;
 }
 
 .advantages-list-item {
@@ -190,10 +198,11 @@ body {
 .advantages-text {
   color: var(--secondary-text-color);
   line-height: 1.71;
+  font-weight: normal;
 }
 /* work */
-.work {
-  text-align: center;
+.section.work {
+  padding-top: 0;
 }
 
 .title-h2 {
@@ -243,14 +252,17 @@ body {
 .team-text {
   color: var(--secondary-text-color);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: normal;
   line-height: 1.16;
-  padding-bottom: 30px;
+
+  margin-bottom: 30px;
 }
 
 /* footer */
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .font-style {
   font-style: normal;
@@ -266,7 +278,6 @@ body {
   font-size: 26px;
   line-height: 1.19;
 
-  padding-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -283,7 +294,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
-  margin-top: 9px;
   margin-bottom: 9px;
 
   /* Или использовать padding ??? */
@@ -298,7 +308,6 @@ body {
 }
 
 .item-footer:last-child {
-  padding-bottom: 60px;
   margin-bottom: 0;
 }
 
@@ -308,7 +317,8 @@ body {
   display: flex;
   justify-content: center;
 
-  margin-bottom: 34px;
+  margin-bottom: 50px;
+  /* margin-bottom: 34px; */
 }
 
 .filter-list .button {
@@ -344,7 +354,6 @@ body {
   background: #ffffff;
   border: 1px solid #eeeeee;
 
-  padding-top: 20px;
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -362,4 +371,5 @@ body {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
+  font-weight: normal;
 }
