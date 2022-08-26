@@ -106,10 +106,12 @@ body {
 .current {
   color: var(--activation-color);
 }
-
+.main-nav nav {
+  margin-right: auto;
+}
 .site-nav {
   display: flex;
-  margin-right: auto;
+
   gap: 50px;
 }
 /* auth-nav */
